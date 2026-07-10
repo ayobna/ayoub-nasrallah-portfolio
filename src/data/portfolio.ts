@@ -10,7 +10,7 @@ export const personalInfo = {
   location: "Tel Aviv, Israel",
   social: {
     linkedin: "https://www.linkedin.com/in/ayoub-nasrallah-091808200/",
-    github: "https://github.com/ayobna?tab=repositories",
+    github: "https://github.com/ayobna",
   },
   summary:
     "Full-Stack Developer with 3.5+ years of experience developing and supporting enterprise financial applications using Angular, .NET Core, SQL Server, and Azure. Experienced in delivering end-to-end features across frontend, backend, REST APIs, and databases, translating business requirements into production solutions, investigating defects, and supporting releases.",
@@ -152,6 +152,7 @@ export const education = [
   {
     program: "AI Engineering",
     institution: "DevOps Experts",
+    institutionUrl: "https://devopsexperts.co.il/",
     period: "Starting Jul 2026",
     status: "upcoming" as const,
     description:
@@ -182,10 +183,12 @@ export const education = [
   {
     program: "Practical Software Engineer",
     institution: "Ruppin Technological College",
+    institutionUrl: "https://www.ruppin-tech.co.il/",
     period: "Oct 2019 – Jul 2021",
     description:
       "Final project grade: 100. TakeMeToWork — shared-ride scheduling application for shift workers with multi-stop route planning, real-time driver tracking, and barcode boarding confirmation.",
     project: "TakeMeToWork",
+    projectUrl: "https://github.com/ayobna/TakeMeToWork_22",
     grade: "100",
     stack: ["React Native", "C#", "SQL Server", "Google Maps API"],
   },
@@ -197,6 +200,10 @@ export const projects = [
     description:
       "Shared-ride scheduling application for shift workers with multi-stop route planning, real-time driver tracking, and barcode boarding confirmation. Final project grade: 100.",
     stack: ["React Native", "C#", "SQL Server", "Google Maps API"],
+    link: {
+      label: "GitHub",
+      url: "https://github.com/ayobna/TakeMeToWork_22",
+    },
     context: "Ruppin Technological College",
   },
   {
