@@ -61,8 +61,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.3 }}
           className="mx-auto mb-10 max-w-2xl text-base leading-relaxed text-muted sm:text-lg"
         >
-          Building enterprise-grade financial systems with end-to-end ownership
-          — from database to UI.
+          {personalInfo.heroIntro}
         </motion.p>
 
         <motion.div
@@ -80,7 +79,9 @@ export default function Hero() {
           </a>
           <a
             href="/Ayoub-Nasrallah-CV.pdf"
-            download
+            download="Ayoub-Nasrallah-CV.pdf"
+            aria-label="Download CV"
+            title="Download CV"
             className="group flex items-center gap-2 rounded-xl border border-border bg-surface/80 px-8 py-3.5 font-medium text-foreground backdrop-blur-sm transition-all hover:border-accent/50 hover:bg-surface-elevated"
           >
             <Download size={18} className="transition-transform group-hover:translate-y-0.5" />

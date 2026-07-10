@@ -18,8 +18,8 @@ export default function About() {
             01. About Me
           </span>
           <h2 className="text-3xl font-bold sm:text-4xl">
-            Turning Complex Requirements Into{" "}
-            <span className="gradient-text">Production-Ready Solutions</span>
+            Developing and Supporting{" "}
+            <span className="gradient-text">Enterprise Financial Applications</span>
           </h2>
         </motion.div>
 

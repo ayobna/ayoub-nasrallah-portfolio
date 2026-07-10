@@ -15,12 +15,13 @@ const jetbrains = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Ayoub Nasrallah | Full-Stack Developer",
   description:
-    "Full-Stack Developer specializing in Angular, .NET Core, and enterprise financial systems. 3.5+ years building scalable capital-markets platforms.",
+    "Full-Stack Developer with 3.5+ years of experience developing and supporting enterprise financial applications using Angular, .NET Core, SQL Server, and Azure.",
   keywords: [
     "Full-Stack Developer",
     "Angular",
     ".NET Core",
     "TypeScript",
+    "SQL Server",
     "Azure",
     "Ayoub Nasrallah",
   ],
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ayoub Nasrallah | Full-Stack Developer",
     description:
-      "Building enterprise-grade financial systems with Angular & .NET Core",
+      "Full-Stack Developer with enterprise experience in Angular and .NET Core — currently expanding into AI Engineering.",
     type: "website",
   },
 };

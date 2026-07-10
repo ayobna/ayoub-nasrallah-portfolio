@@ -15,6 +15,7 @@ export default function SocialLinks({
         target="_blank"
         rel="noopener noreferrer"
         aria-label="LinkedIn profile"
+        title="LinkedIn profile"
         className="flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-surface-elevated text-muted transition-all hover:border-accent/40 hover:text-accent-light hover:shadow-lg hover:shadow-accent/10"
       >
         <Linkedin size={iconSize} />
@@ -24,6 +25,7 @@ export default function SocialLinks({
         target="_blank"
         rel="noopener noreferrer"
         aria-label="GitHub profile"
+        title="GitHub profile"
         className="flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-surface-elevated text-muted transition-all hover:border-accent/40 hover:text-accent-light hover:shadow-lg hover:shadow-accent/10"
       >
         <Github size={iconSize} />

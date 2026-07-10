@@ -56,7 +56,8 @@ export default function Experience() {
                       experience.company
                     )}{" "}
                     <span className="text-muted">
-                      (outsourced to {experience.client})
+                      (outsourced to {experience.client},{" "}
+                      {experience.clientDetail})
                     </span>
                   </p>
                 </div>

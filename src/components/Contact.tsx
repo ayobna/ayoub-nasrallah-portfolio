@@ -23,7 +23,7 @@ export default function Contact() {
           className="mb-16 text-center"
         >
           <span className="mb-3 inline-block font-mono text-sm text-accent-light">
-            05. Contact
+            06. Contact
           </span>
           <h2 className="text-3xl font-bold sm:text-4xl">
             Let&apos;s <span className="gradient-text">Work Together</span>
@@ -44,6 +44,8 @@ export default function Contact() {
           <div className="mb-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <a
               href={`mailto:${personalInfo.email}`}
+              aria-label="Send email"
+              title="Send email"
               className="group flex flex-col items-center gap-2 rounded-xl border border-border bg-surface-elevated p-4 transition-all hover:border-accent/40 hover:shadow-lg hover:shadow-accent/10"
             >
               <Mail
@@ -57,6 +59,8 @@ export default function Contact() {
             </a>
             <a
               href={`tel:${personalInfo.phone.replace(/-/g, "")}`}
+              aria-label="Call phone number"
+              title="Call phone number"
               className="group flex flex-col items-center gap-2 rounded-xl border border-border bg-surface-elevated p-4 transition-all hover:border-accent/40 hover:shadow-lg hover:shadow-accent/10"
             >
               <Phone
@@ -72,6 +76,8 @@ export default function Contact() {
               href={getWhatsAppUrl()}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Send WhatsApp message"
+              title="Send WhatsApp message"
               className="group flex flex-col items-center gap-2 rounded-xl border border-border bg-surface-elevated p-4 transition-all hover:border-emerald/40 hover:shadow-lg hover:shadow-emerald/10"
             >
               <span className="text-emerald transition-transform group-hover:scale-110">

@@ -13,15 +13,17 @@ export const personalInfo = {
     github: "https://github.com/ayobna?tab=repositories",
   },
   summary:
-    "Full-Stack Developer with 3.5+ years of experience building and maintaining large-scale securities and capital-markets management systems using Angular, .NET Core, SQL Server, and Azure DevOps. Experienced in delivering end-to-end solutions across database, backend, and frontend layers, implementing complex business workflows, and supporting enterprise applications used by institutional financial organizations.",
+    "Full-Stack Developer with 3.5+ years of experience developing and supporting enterprise financial applications using Angular, .NET Core, SQL Server, and Azure. Experienced in delivering end-to-end features across frontend, backend, REST APIs, and databases, translating business requirements into production solutions, investigating defects, and supporting releases.",
   passion:
-    "Passionate about modern software development, cloud technologies, and AI-powered development tools.",
+    "Hands-on experience with AI-assisted development tools and modern engineering POCs. Currently preparing for an AI Engineering program starting July 2026.",
+  heroIntro:
+    "Full-Stack Developer with enterprise experience building and supporting financial applications — currently expanding into AI Engineering.",
 };
 
 export const stats = [
   { value: "3.5+", label: "Years Experience" },
-  { value: "400+", label: "Screens Built" },
-  { value: "250K+", label: "Records Exported" },
+  { value: "400+", label: "Screen Enterprise Platform" },
+  { value: "3", label: "Featured Projects" },
   { value: "100", label: "Final Project Grade" },
 ];
 
@@ -30,27 +32,43 @@ export const experience = {
   company: "ZioNet",
   companyUrl: "https://www.zion-net.co.il/",
   client: "Poalim-Sahar",
-  period: "Nov 2022 – Present",
+  clientDetail: "a subsidiary of Bank Hapoalim",
+  period: "Nov 2022 – Jul 2026",
   location: "Tel Aviv",
   description:
-    "Enterprise financial & securities-management platform serving institutional investors and large financial organizations, including insurance companies and enterprise clients.",
-  stack: ["Angular", "DevExtreme", "ASP.NET Core", "SQL Server", "SignalR"],
+    "Contributed as part of the development team to an internal enterprise financial platform used by Bank Hapoalim clients for securities and investment-management operations.",
+  stack: [
+    "Angular",
+    "TypeScript",
+    "DevExtreme",
+    ".NET Core",
+    "C#",
+    "Entity Framework Core",
+    "SQL Server",
+    "REST APIs",
+  ],
   highlights: [
-    "Delivered end-to-end features across SQL Server, ASP.NET Core, and Angular based on business requirements and functional specifications",
-    "Designed and implemented database changes, backend services, REST APIs, and frontend screens for a platform containing over 400 screens",
-    "Took ownership of complete feature delivery, from requirements analysis through implementation, testing, and release preparation",
-    "Participated in requirements and business-process discussions, identifying calculation and workflow inconsistencies before implementation",
-    "Implemented complex business logic and financial workflows for securities-management operations",
-    "Built and maintained Angular applications using TypeScript and DevExtreme components",
-    "Worked extensively with SQL Server, Entity Framework, Stored Procedures, and data-management processes",
-    "Developed real-time functionality using SignalR",
-    "Built high-performance Excel export solutions handling 250K+ records with RTL Hebrew support",
-    "Served as a key knowledge resource for multiple application modules, supporting production issue investigations and troubleshooting",
-    "Worked closely with QA engineers to validate requirements, investigate issues, and improve release quality",
+    "Delivered end-to-end features across Angular, .NET Core, and SQL Server based on business requirements and functional specifications",
+    "Developed and maintained Angular screens using TypeScript, RxJS, and DevExtreme, integrating them with REST APIs",
+    "Built and maintained backend services, REST APIs, Entity Framework Core data access, database tables, T-SQL queries, and Stored Procedures",
+    "Implemented and maintained business rules and financial workflows for securities and investment-management processes",
+    "Investigated bugs and production issues and collaborated with developers, QA, and business teams throughout testing and release preparation",
   ],
 };
 
 export const skillCategories = [
+  {
+    title: "Backend",
+    icon: "Server",
+    skills: [
+      "C#",
+      ".NET Core",
+      "Entity Framework Core",
+      "SignalR",
+      "Java",
+      "Spring Boot",
+    ],
+  },
   {
     title: "Frontend",
     icon: "Layout",
@@ -59,24 +77,12 @@ export const skillCategories = [
       "TypeScript",
       "RxJS",
       "DevExtreme",
-      "Bootstrap",
       "React",
       "React Native",
       "JavaScript",
       "HTML5",
-    ],
-  },
-  {
-    title: "Backend",
-    icon: "Server",
-    skills: [
-      "C#",
-      ".NET Core",
-      "ASP.NET MVC",
-      "SignalR",
-      "Entity Framework Core",
-      "Java",
-      "Spring Framework",
+      "CSS3",
+      "Bootstrap",
     ],
   },
   {
@@ -84,7 +90,9 @@ export const skillCategories = [
     icon: "Database",
     skills: [
       "SQL Server",
+      "T-SQL",
       "Stored Procedures",
+      "Azure SQL",
       "MongoDB",
       "Firebase",
     ],
@@ -94,13 +102,21 @@ export const skillCategories = [
     icon: "Cloud",
     skills: [
       "Azure",
+      "Azure App Service",
       "Azure DevOps",
-      "Docker",
-      "Kubernetes",
-      "Microservices",
       "Git",
       "GitHub Actions",
       "CI/CD",
+    ],
+  },
+  {
+    title: "Training & Project Experience",
+    icon: "Boxes",
+    skills: [
+      "Docker",
+      "Kubernetes",
+      "Microservices",
+      "ASP.NET MVC (academic)",
     ],
   },
   {
@@ -111,72 +127,113 @@ export const skillCategories = [
       "Claude",
       "Cursor",
       "GitHub Copilot",
-      "Playwright",
       "RAG",
       "AI Agents",
       "MCP",
       "Azure OpenAI",
+      "Python",
+      "Playwright",
     ],
   },
   {
-    title: "Architecture",
+    title: "Architecture & APIs",
     icon: "GitBranch",
     skills: [
-      "REST API",
-      "OpenAPI/Swagger",
+      "REST APIs",
+      "OpenAPI / Swagger",
       "Repository Pattern",
       "MVC Architecture",
       "OOP",
-      "Python",
     ],
   },
 ];
 
 export const education = [
   {
-    program: "Microservices & Cloud Development",
+    program: "AI Engineering",
+    institution: "DevOps Experts",
+    period: "Starting Jul 2026",
+    status: "upcoming" as const,
+    description:
+      "Upcoming hands-on program covering Python, RAG, LLM integration, MCP, AI Agents, Docker, observability, and production deployment.",
+  },
+  {
+    program: "Java Backend & Microservices Engineering",
     institution: "Tsofen-Tashbik",
     institutionUrl:
       "https://www.linkedin.com/company/tsofen-tashbik/posts/?feedView=all",
-    period: "2024",
+    period: "Feb 2024 – May 2024",
     description:
-      "Professional program covering Microservices architecture, Docker, Kubernetes, Spring Framework, SQL/NoSQL, Git, and DevOps fundamentals.",
+      "250-hour professional program covering Spring Boot, Microservices, Docker, Kubernetes, SQL/NoSQL, Git, and DevOps.",
     project: "DisplayingSocialMediaData",
     projectUrl: "https://github.com/ayobna/DisplayingSocialMediaData",
   },
   {
-    program: "Practical High-Tech Engineering",
-    institution: "ZioNet & Heznek",
+    program: "Full-Stack Software Engineering Bootcamp",
+    institution: "ZioNet",
     institutionUrl: "https://www.zion-net.co.il/",
-    period: "2021 – 2022",
+    period: "Nov 2021 – Mar 2022",
     description:
-      "Built three React Native apps; final app ran in real-time with Azure SignalR, an ASP.NET Core backend, Azure App Service, and Azure SQL.",
+      "85-hour program. Built three React Native applications; final project: real-time collaborative shopping list using Azure SignalR, .NET Core, Azure App Service, and Azure SQL.",
     project: "ShoppingList",
     projectUrl: "https://github.com/ayobna/ShoppingList",
-    stack: ["React Native", "Azure SignalR", "ASP.NET Core", "Azure SQL"],
+    stack: ["React Native", "Azure SignalR", ".NET Core", "Azure SQL"],
   },
   {
     program: "Practical Software Engineer",
-    institution: "Ruppin Academic Center",
-    period: "2019 – 2021",
-    description: "Comprehensive software engineering program with hands-on project development.",
-    project: "Take Me To Work",
-    projectUrl:
-      "https://firebasestorage.googleapis.com/v0/b/takemetowork-e2388.appspot.com/o/TakeMeToWork.pdf?alt=media&token=88ff23bb-47fa-4775-a3d9-a92669d9a1cb",
+    institution: "Ruppin Technological College",
+    period: "Oct 2019 – Jul 2021",
+    description:
+      "Final project grade: 100. TakeMeToWork — shared-ride scheduling application for shift workers with multi-stop route planning, real-time driver tracking, and barcode boarding confirmation.",
+    project: "TakeMeToWork",
     grade: "100",
+    stack: ["React Native", "C#", "SQL Server", "Google Maps API"],
+  },
+];
+
+export const projects = [
+  {
+    name: "TakeMeToWork",
+    description:
+      "Shared-ride scheduling application for shift workers with multi-stop route planning, real-time driver tracking, and barcode boarding confirmation. Final project grade: 100.",
+    stack: ["React Native", "C#", "SQL Server", "Google Maps API"],
+    context: "Ruppin Technological College",
+  },
+  {
+    name: "ShoppingList",
+    description:
+      "Real-time collaborative shopping list built as the final project of a full-stack bootcamp, using Azure SignalR, .NET Core, Azure App Service, and Azure SQL.",
+    stack: ["React Native", "Azure SignalR", ".NET Core", "Azure App Service", "Azure SQL"],
+    link: {
+      label: "GitHub",
+      url: "https://github.com/ayobna/ShoppingList",
+    },
+    context: "ZioNet Bootcamp",
+  },
+  {
+    name: "DisplayingSocialMediaData",
+    description:
+      "Spring Boot microservices project from a Java backend and microservices engineering program, deployed with Docker.",
+    stack: ["Spring Boot", "Microservices", "Docker"],
+    link: {
+      label: "GitHub",
+      url: "https://github.com/ayobna/DisplayingSocialMediaData",
+    },
+    context: "Tsofen-Tashbik",
   },
 ];
 
 export const languages = [
   { name: "Arabic", level: "Native", percent: 100 },
   { name: "Hebrew", level: "Native", percent: 100 },
-  { name: "English", level: "Professional", percent: 85 },
+  { name: "English", level: "Professional Working Proficiency", percent: 85 },
 ];
 
 export const navLinks = [
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
   { href: "#experience", label: "Experience" },
+  { href: "#projects", label: "Projects" },
   { href: "#education", label: "Education" },
   { href: "#contact", label: "Contact" },
 ];

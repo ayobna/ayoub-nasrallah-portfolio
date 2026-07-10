@@ -8,6 +8,7 @@ import {
   Cloud,
   Sparkles,
   GitBranch,
+  Boxes,
   type LucideIcon,
 } from "lucide-react";
 import { skillCategories } from "@/data/portfolio";
@@ -19,6 +20,7 @@ const iconMap: Record<string, LucideIcon> = {
   Cloud,
   Sparkles,
   GitBranch,
+  Boxes,
 };
 
 export default function Skills() {
@@ -42,7 +44,7 @@ export default function Skills() {
           </h2>
         </motion.div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {skillCategories.map((category, i) => {
             const Icon = iconMap[category.icon] || Layout;
             return (

@@ -18,14 +18,14 @@ export default function Education() {
           className="mb-16 text-center"
         >
           <span className="mb-3 inline-block font-mono text-sm text-accent-light">
-            04. Education
+            05. Education
           </span>
           <h2 className="text-3xl font-bold sm:text-4xl">
             Learning & <span className="gradient-text">Growth</span>
           </h2>
         </motion.div>
 
-        <div className="mb-16 grid gap-6 md:grid-cols-3">
+        <div className="mb-16 grid gap-6 sm:grid-cols-2">
           {education.map((item, i) => (
             <motion.div
               key={item.program}
@@ -35,11 +35,18 @@ export default function Education() {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="glass group flex flex-col rounded-2xl p-6 transition-all hover:border-accent/30 hover:shadow-lg hover:shadow-accent/10"
             >
-              <div className="mb-4 flex items-center justify-between">
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent/10 text-accent-light">
+              <div className="mb-4 flex items-center justify-between gap-3">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent/10 text-accent-light">
                   <GraduationCap size={20} />
                 </div>
-                <span className="font-mono text-xs text-muted">{item.period}</span>
+                <div className="flex flex-col items-end gap-1">
+                  <span className="font-mono text-xs text-muted">{item.period}</span>
+                  {"status" in item && item.status === "upcoming" && (
+                    <span className="rounded-md bg-cyan/10 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide text-cyan">
+                      Upcoming
+                    </span>
+                  )}
+                </div>
               </div>
               <h3 className="mb-1 font-semibold text-foreground">
                 {item.program}
@@ -62,7 +69,7 @@ export default function Education() {
               <p className="mb-4 flex-1 text-sm leading-relaxed text-muted">
                 {item.description}
               </p>
-              {item.project && (
+              {"project" in item && item.project && (
                 <div className="mt-auto flex items-center gap-2 rounded-lg border border-border bg-surface-elevated px-3 py-2">
                   <Award size={14} className="text-emerald" />
                   <span className="text-sm">
@@ -82,7 +89,7 @@ export default function Education() {
                         {item.project}
                       </span>
                     )}
-                    {item.grade && (
+                    {"grade" in item && item.grade && (
                       <span className="ml-2 rounded bg-emerald/10 px-1.5 py-0.5 text-xs font-bold text-emerald">
                         {item.grade}/100
                       </span>
@@ -90,7 +97,7 @@ export default function Education() {
                   </span>
                 </div>
               )}
-              {item.stack && (
+              {"stack" in item && item.stack && (
                 <div className="mt-3 flex flex-wrap gap-1.5">
                   {item.stack.map((tech) => (
                     <span
