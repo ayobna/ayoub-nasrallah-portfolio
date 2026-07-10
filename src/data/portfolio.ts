@@ -163,7 +163,7 @@ export const education = [
     institution: "Tsofen-Tashbik",
     institutionUrl:
       "https://www.linkedin.com/company/tsofen-tashbik/posts/?feedView=all",
-    period: "Feb 2024 – May 2024",
+    period: "Nov 2023 – Apr 2024",
     description:
       "250-hour professional program covering Spring Boot, Microservices, Docker, Kubernetes, SQL/NoSQL, Git, and DevOps.",
     project: "DisplayingSocialMediaData",
@@ -173,7 +173,7 @@ export const education = [
     program: "Full-Stack Software Engineering Bootcamp",
     institution: "ZioNet",
     institutionUrl: "https://www.zion-net.co.il/",
-    period: "Nov 2021 – Mar 2022",
+    period: "Nov 2021 – May 2022",
     description:
       "85-hour program. Built three React Native applications; final project: real-time collaborative shopping list using Azure SignalR, .NET Core, Azure App Service, and Azure SQL.",
     project: "ShoppingList",
@@ -184,7 +184,7 @@ export const education = [
     program: "Practical Software Engineer",
     institution: "Ruppin Technological College",
     institutionUrl: "https://www.ruppin-tech.co.il/",
-    period: "Oct 2019 – Jul 2021",
+    period: "Oct 2019 – May 2021",
     description:
       "Final project grade: 100. TakeMeToWork — shared-ride scheduling application for shift workers with multi-stop route planning, real-time driver tracking, and barcode boarding confirmation.",
     project: "TakeMeToWork",
